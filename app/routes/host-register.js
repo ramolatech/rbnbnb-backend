@@ -7,7 +7,11 @@ module.exports = (app) => {
 
     app.post('/host-register',hostRegister.postHostData)
 
+    app.put('/host-register', hostRegister.updateHostData)
+
     app.get('/host-register', hostRegister.getAllHosts)
+
+    app.delete('/host-register/:userId',hostRegister.deleteHost)
 
     // //retrieve all notes
     // app.get('/notes',notes.findAll);

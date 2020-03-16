@@ -65,7 +65,7 @@ const HostRegistrationSchema = mongoose.Schema({
     required: false
   },
   availablePower: {
-    type: Number,
+    type: String,
     required: false
   },
   additionalRatePerAdult: {
@@ -108,27 +108,27 @@ const HostRegistrationSchema = mongoose.Schema({
     type: Number,
     required: false
   },
-  address1: {
+  siteAddress1: {
     type: String,
     required: false
   },
-  address2: {
+  siteAddress2: {
     type: String,
     required: false
   },
-  city: {
+  siteCity: {
     type: String,
     required: false
   },
-  state: {
+  siteState: {
     type: String,
     required: false
   },
-  zip: {
+  siteZip: {
     type: String,
     required: false
   },
-  country: {
+  siteCountry: {
     type: String,
     required: false
   },
